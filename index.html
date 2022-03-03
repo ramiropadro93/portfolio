@@ -19,7 +19,7 @@
 <body>
     <header class="header" id="header">
         <nav class="nav container">
-            <a href="#" class="nav__logo">Ramiro</a>
+            <a href="#" class="nav__logo">Ramiro Padró</a>
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list grid">
                     <li class="nav__item">
@@ -29,7 +29,7 @@
                     </li>
                     <li class="nav__item">
                         <a href="#about" class="nav__link">
-                            <i class="uil uil-user"></i> About
+                            <i class="uil uil-user nav__icon"></i> About
                         </a>
                     </li>
                     <li class="nav__item">
@@ -38,13 +38,13 @@
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#services" class="nav__link">
-                            <i class="uil uil-briefcase-alt nav__icon"></i> Services
+                        <a href="#qualification" class="nav__link">
+                            <i class="uil uil-university nav__icon"></i> Qualification
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#portfolio" class="nav__link">
-                            <i class="uil uil-scenery nav__icon"></i> Portfolio
+                        <a href="#services" class="nav__link">
+                            <i class="uil uil-briefcase-alt nav__icon"></i> Services
                         </a>
                     </li>
                     <li class="nav__item">
@@ -53,13 +53,11 @@
                         </a>
                     </li>
                 </ul>
-                <i class="uil uil-times nav__close" id="nav-close"></i>
             </div>
 
             <div class="nav__btns">
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class="uil uil-apps"></i>
-                </div>
+                <!-- Theme change button -->
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
             </div>
         </nav>
     </header>
@@ -68,17 +66,6 @@
         <section class="home section" id="home">
             <div class="home__container container grid">
                 <div class="home__content grid">
-                    <div class="home__social">
-                        <a href="https://www.linkedin.com/in/ramiropadro/" class="home__social icon" target="_blank">
-                            <i class="uil uil-linkedin-alt"></i>
-                        </a>
-                    </div>
-                    <div class="home__social">
-                        <a href="https://github.com/ramiropadro93/" class="home__social icon" target="_blank">
-                            <i class="uil uil-github-alt"></i>
-                        </a>
-                    </div>
-
                     <div class="home__img">
                         <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <mask id="mask0" mask-type="alpha">
@@ -128,16 +115,19 @@
 
                     <div class="about__info">
                         <div>
-                            <span class="about__info-title">02+</span>
+                            <span class="about__info-title">03+</span>
                             <span class="about__info-name">Years <br> experience</span>
+                            <i class="uil uil-calendar-alt about__icon"></i>
                         </div>
                         <div>
-                            <span class="about__info-title">2+</span>
+                            <span class="about__info-title">04+</span>
                             <span class="about__info-name">Completed <br> projects</span>
+                            <i class="uil uil-clipboard-notes about__icon"></i>
                         </div>
                         <div>
-                            <span class="about__info-title">2+</span>
+                            <span class="about__info-title">03+</span>
                             <span class="about__info-name">Companies <br> worked</span>
+                            <i class="uil uil-briefcase about__icon"></i>
                         </div>
                     </div>
 
@@ -299,7 +289,7 @@
                 </div>
             </div>
         </section>
-        <section class="qualification section">
+        <section class="qualification section" id="qualification">
             <h2 class="section__title">Qualification</h2>
             <span class="section__subtitle">My personal journey</span>
 
@@ -318,7 +308,25 @@
                 <div class="qualification__sections">
                     <!-- qualification content 1 -->
                     <div class="qualification__content">
+
                         <!-- qualification 1 -->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Computer Engineering</h3>
+                                <span class="qualification__subtitle">Argentina - Blas Pascal University</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2013 - 2021
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+
+                        <!-- qualification 2 -->
                         <div class="qualification__data">
                             <div></div>
 
@@ -336,7 +344,7 @@
                             </div>
                         </div>
 
-                        <!-- qualification 2 -->
+                        <!-- qualification 3 -->
                         <div class="qualification__data">
                             <div></div>
 
@@ -354,24 +362,6 @@
                                 </div>
                             </div>
                         </div>
-
-                        <!-- qualification 3 -->
-                        <div class="qualification__data">
-                            <div>
-                                <h3 class="qualification__title">Computer Engineering</h3>
-                                <span class="qualification__subtitle">Argentina - Blas Pascal University</span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2013 - 2021
-                                </div>
-                            </div>
-
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
-                        </div>
-
                     </div>
                     <!-- qualification content 2 -->
                     <div class="qualification__content">
@@ -453,11 +443,11 @@
                             <ul class="services__modal-services grid">
                                 <li class="services__modal-service">
                                     <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>User interface development.</p>
+                                    <p>Prototyping and high-fidelity design.</p>
                                 </li>
                                 <li class="services__modal-service">
                                     <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>Web page development.</p>
+                                    <p>User testing.</p>
                                 </li>
                                 <li class="services__modal-service">
                                     <i class="uil uil-check-circle services__modal-icon"></i>
@@ -500,69 +490,87 @@
                                 </li>
                                 <li class="services__modal-service">
                                     <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>UX elements creation.</p>
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>Company's brand positioning.</p>
+                                    <p>High quality software assurance.</p>
                                 </li>
                             </ul>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
-        <section class="portfolio section" id="portfolio">
-            <h2 class="section__title">Portfolio</h2>
-            <span class="section__subtitle">Most recent work</span>
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Contact Me</h2>
+            <span class="section__subtitle">Get in touch</span>
 
-            <div class="portfolio__container container swiper-container">
-                <div class="swiper-wrapper">
-                    <!-- Portfolio 1 -->
-                    <div class="portfolio__content grid swiper-slide">
-                        <img src="assets/img/portfolio1.jpg" alt="" class="portfolio__img">
+            <div class="contact__container container grid">
+                <div>
+                    <!-- contact 1 -->
+                    <div class="contact__information">
+                        <i class="uil uil-phone contact__icon"></i>
 
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">Local Bars Ranking</h3>
-                            <p class="portfolio__description">Website developed in Angular 13 containing information about
-                                local bars, beers & burgers.
-                            </p>
-                            <a href="#" class="button button--flex button--small portfolio__button">
-                                Demo
-                                <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
+                        <div>
+                            <h3 class="contact__title">Call Me</h3>
+                            <span class="contact__subtitle">+54 9 351 3881823</span>
                         </div>
                     </div>
-                    <!-- Portfolio 2 -->
-                    <div class="portfolio__content grid swiper-slide">
-                        <img src="assets/img/portfolio2.jpg" alt="" class="portfolio__img">
+                    <!-- contact 2 -->
+                    <div class="contact__information">
+                        <i class="uil uil-envelope contact__icon"></i>
 
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">Modern landing page</h3>
-                            <p class="portfolio__description">Website adaptable for all devices with UI components
-                                & animated interactions.
-                            </p>
-                            <a href="#" class="button button--flex button--small portfolio__button">
-                                Demo
-                                <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
+                        <div>
+                            <h3 class="contact__title">Email Me</h3>
+                            <span class="contact__subtitle">ramiropadrog@gmail.com</span>
+                        </div>
+                    </div>
+                    <!-- contact 3 -->
+                    <div class="contact__information">
+                        <i class="uil uil-map-marker contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">Location</h3>
+                            <span class="contact__subtitle">Argentina - Córdoba</span>
+                        </div>
+                    </div>
+                    <!-- contact 4 -->
+                    <div class="contact__information">
+                        <i class="uil uil-linkedin contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">Linkedin</h3>
+                            <span class="contact__subtitle">/in/ramiropadro</span>
                         </div>
                     </div>
                 </div>
-
-                <div class="swiper-button-next">
-                    <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
-                </div>
-                <div class="swiper-button-prev">
-                    <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
-                </div>
-
-                <div class="swiper-pagination"></div>
             </div>
         </section>
     </main>
-    <script src="./js/swiper-bundle.min.js"></script>
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div>
+                    <h1 class="footer_title">Ramiro Padró</h1>
+                    <span class="footer__subtitle">Fullstack Developer</span>
+                    <div class="footer__socials">
+                        <a href="https://www.facebook.com" target="_blank" class="footer__social">
+                            <i class="uil uil-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank" class="footer__social">
+                            <i class="uil uil-instagram"></i>
+                        </a>
+                        <a href="https://github.com/ramiropadro93/" target="_blank" class="footer__social">
+                            <i class="uil uil-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <p class="footer__copy">&#169; JAR. All rights reserved</p>
+        </div>
+    </footer>
+
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
     <script src="./js/main.js"></script>
 </body>
 </html>
