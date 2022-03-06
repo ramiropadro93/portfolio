@@ -1,6 +1,5 @@
 /* Google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
-
 /* Variables */
 :root {
     --header-height: 3rem;
@@ -51,20 +50,6 @@
     --z-tooltip: 10;
     --z-fixed: 100;
     --z-modal: 1000;
-}
-
-
-/* Font size for large devices */
-@media screen and (min-width: 968px){
-    :root {
-        --big-font-size: 3rem;
-        --h1-font-size: 2.25rem;
-        --h2-font-size: 1.5rem;
-        --h3-font-size: 1.25rem;
-        --normal-font-size: 1rem;
-        --small-font-size: .875rem;
-        --smaller-font-size: .813rem;
-    }
 }
 
 /*Variables dark theme*/
@@ -198,20 +183,6 @@ img {
 
 .nav__logo:hover {
     color: var(--first-color);
-}
-
-@media screen and (max-width: 767px) {
-    .nav__menu {
-        position: fixed;
-        bottom: -100%;
-        left: 0;
-        width: 100%;
-        background-color: var(--body-color);
-        padding: 2rem 1.5rem 4rem;
-        box-shadow: 0 -1px 4px rgba(0,0,0,.15);
-        border-radius: 1.5rem 1.5rem 0 0;
-        transition: .3s;
-    }
 }
 
 .nav__list {
@@ -925,6 +896,20 @@ a:hover {
     }
 }
 
+@media screen and (max-width: 767px) {
+    .nav__menu {
+        position: fixed;
+        bottom: -100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--body-color);
+        padding: 2rem 1.5rem 4rem;
+        box-shadow: 0 -1px 4px rgba(0,0,0,.15);
+        border-radius: 1.5rem 1.5rem 0 0;
+        transition: .3s;
+    }
+}
+
 @media screen and (min-width: 768px) {
     .container {
         margin-left: auto;
@@ -1059,6 +1044,19 @@ a:hover {
 
     .footer__copy {
         margin-top: 4.5rem;
+    }
+}
+
+/* Font size for large devices */
+@media screen and (min-width: 968px){
+    :root {
+        --big-font-size: 3rem;
+        --h1-font-size: 2.25rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+        --smaller-font-size: .813rem;
     }
 }
 
